@@ -53,7 +53,11 @@
             pilot.innerHTML = `Pilot ${pilotnameInput.value} is ready for launch.`;
             copilot.innerHTML = `Co-pilot ${copilotnameInput.value}is ready for launch.`;
             fuelLevel.innerHTML = "Fuel Level too low for launch.";
+               if(cargoMassInput.value>10000){
+                  cargoMass.innerHTML = "Cargo Mass too high for launch."
+               }else{
             cargoMass.innerHTML = "Cargo Mass low enough for launch.";
+               }
          }else if
             (cargoMassInput.value>10000){
                let launchheader = document.getElementById("launchStatus");
